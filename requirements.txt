@@ -1,0 +1,9 @@
+appdirs
+certifi
+click
+Flask
+numpy
+pandas
+scikit-learn
+scipy
+
