@@ -5,7 +5,7 @@ import pickle
 import pandas as pd
 
 app = Flask(__name__)
-model = pickle.load(open("flight_rf.pkl", "rb"))
+model12 = pickle.load(open("flight_rf.pkl", "rb"))
 
 
 
@@ -322,7 +322,7 @@ def predict():
     #    'Destination_Cochin', 'Destination_Delhi', 'Destination_Hyderabad',
     #    'Destination_Kolkata', 'Destination_New Delhi']
         
-        prediction=model.predict([[
+        prediction=model12.predict([[
             Total_stops,
             Journey_day,
             Journey_month,
